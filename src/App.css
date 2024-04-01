@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  font-family: "inter", sans-serif;
+}
+
+:root{
+  /* colors  */
+  --text-color:#00ABCA;
+  --dBack-color:#000000;
+  --wBack-color:#ffffff;
+
+  /* font weights  */
+  --bold: 900;
+  --regular: 400;
+}
+
+
+
+

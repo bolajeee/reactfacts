@@ -1,0 +1,21 @@
+.container{
+    padding: 50px 30px;
+    height: 100vh;
+}
+
+.header{
+    font-weight: var(--bold);
+    font-size: 50px;
+    padding: 50px 0;
+}
+
+.list li::marker{
+    color: var(--text-color);
+    font-size: 30px;
+}
+
+.listItem{
+    font-weight: var(--regular);
+    font-size: 22px;
+}
+
