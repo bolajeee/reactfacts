@@ -6,8 +6,8 @@ import Body from './Components/Body.js/Body';
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Body />
+      <Navbar darkBackground="false"/>
+      <Body darkBackground="false" />
     </div>
   );
 }

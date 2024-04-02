@@ -5,7 +5,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    box-shadow:2px 2px #00000069 ;
+    box-shadow:2px 2px #00000069;
+    border-bottom:1px solid ;
 }
 
 .logo{

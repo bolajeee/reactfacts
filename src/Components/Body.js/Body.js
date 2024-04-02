@@ -1,9 +1,16 @@
 import React from "react";
 import "./styles.css"
 
-export default function Body() {
+
+export default function Body(props) {
+
+    const styles = {
+        backgroundColor: props.darkBackground ? "#ffffff" : "#00000",
+        color: props.darkBackground ? "#000000" : "#ffffff"
+}
+    
     return <>
-        <div className="container">
+        <div style={styles} className="container">
             <h1 className="header">Fun facts about React</h1>
             <ul className="list">
                 <li className="listItem">Was first released in 2013</li>
@@ -13,5 +20,6 @@ export default function Body() {
                 <li className="listItem">Powers thousands of enterprise apps, including mobile apps</li>
             </ul>
         </div>
+        
     </>
 }
