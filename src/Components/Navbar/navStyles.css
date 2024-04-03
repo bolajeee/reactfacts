@@ -1,0 +1,31 @@
+.navbar{
+    height: 3rem;
+    background-color: var(--wBack-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow:-2px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    border-bottom:1px solid ;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logoText{
+    font-weight: var(--bold);
+    font-size: 25px;
+    color: var(--text-color);
+}
+
+.backgPicker{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-weight: var(--regular);
+}
+
+

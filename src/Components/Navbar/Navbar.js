@@ -1,26 +1,24 @@
 import React from "react";
-import "./styles.css"
+import "./navStyles.css"
+import Switch from "../switch/Switch";
 
-export default function Navbar() {
-    const [darkBackground, setDarkBackground] = React.useState(true) 
+
+export default function Navbar(props) {
+    const [darkBackground, setDarkBackground] = React.useState({this.props.background})
     
     const styles = {
         backgroundColor: darkBackground ? "#fff" : "#000",
         color: darkBackground ? "#000000" : "#ffffff",
         borderColor: darkBackground ? "#000000" : "#ffffff"
-     
     }
-    
-    function handleClick() {
+
+    function handleClick() {    
         setDarkBackground(prevDarkBackground => {
             return !prevDarkBackground
         })
-
-      
-
     }
-
-
+    
+   
     return <>
         <div style={styles} className="navbar">
             <div className="logo">
@@ -29,9 +27,11 @@ export default function Navbar() {
             </div>
 
             <div className="backgPicker">
-            <p className={darkBackground? "#000": "dark"} >Light</p>
-            <div onClick={handleClick} className="toggleSwitch"></div>
-            <p className={darkBackground? "dark": "light"} >Dark</p>
+            <p style={{color: darkBackground? "#000": "#808080"}} >Light</p>
+
+             <Switch clicked={handleClick} dback={darkBackground} />
+
+            <p style={{color: darkBackground? "#808080": "#fff"}} >Dark</p>
             </div>
             
         </div>
