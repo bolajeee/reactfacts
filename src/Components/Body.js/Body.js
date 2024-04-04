@@ -4,13 +4,16 @@ import "./bodyStyles.css"
 
 export default function Body(props) {
 
+    const { darkBackground } = props 
+    
     const styles = {
-        backgroundColor: props.darkBackground ? "#ffffff" : "#00000",
-        color: props.darkBackground ? "#000000" : "#ffffff"
+        backgroundColor: darkBackground ? "#fff" : "#000",
+        color: darkBackground ? "#000000" : "#ffffff",
+        transition: ".5s ease-in-out"
     }
     
     return <>
-<div style={{styles}} className="container">
+        <div style={styles} className="container">
             <h1 className="header">Fun facts about React</h1>
             <ul className="list">
                 <li className="listItem">Was first released in 2013</li>

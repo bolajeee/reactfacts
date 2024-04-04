@@ -3,24 +3,23 @@ import "./navStyles.css"
 import Switch from "../switch/Switch";
 
 
+
 export default function Navbar(props) {
-    const [darkBackground, setDarkBackground] = React.useState({this.props.background})
+    
+    const { handleClick, darkBackground} = props
     
     const styles = {
         backgroundColor: darkBackground ? "#fff" : "#000",
         color: darkBackground ? "#000000" : "#ffffff",
-        borderColor: darkBackground ? "#000000" : "#ffffff"
+        borderColor: darkBackground ? "#000000" : "#ffffff",
+        transition: ".5s ease-in-out"
     }
 
-    function handleClick() {    
-        setDarkBackground(prevDarkBackground => {
-            return !prevDarkBackground
-        })
-    }
     
    
     return <>
-        <div style={styles} className="navbar">
+        <div style={styles } className="navbar">
+            
             <div className="logo">
             <img src="../images/logo.png"></img>
             <p className="logoText">React Facts</p>
